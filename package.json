@@ -2,9 +2,13 @@
   "name": "lokidown",
   "version": "1.0.0",
   "description": "A Level down wrapper for lokijs",
-  "main": "index.js",
+  "main": "LokiDown.js",
   "repository": "https://github.com/teken/lokidown",
   "author": "Duncan Haig",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "abstract-leveldown": "^5.0.0",
+    "lokijs": "^1.5.5"
+  }
 }
