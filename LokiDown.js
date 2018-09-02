@@ -63,4 +63,18 @@ export default class LokiDown extends AbstractLevelDOWN {
 		if (result) callback();
 		else callback(new Error('NotFound'));
 	}
+
+	_batch(operations, options, callback) {
+		operations.forEach(operation => {
+			switch(operation.type) {
+				case 'put':
+					this._put(operation.key, operation.value, {});
+					break;
+
+				case 'del':
+					this._del(operation.key, {});
+					break;
+			}
+		});
+	}
 }
