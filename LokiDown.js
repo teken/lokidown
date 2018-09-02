@@ -5,7 +5,7 @@ export default class LokiDown extends AbstractLevelDOWN {
 	constructor(path, options) {
 		super();
 		this.loki = new Loki(path, dbOptions);
-		this.collectionName = 'name';
+		this.collectionName = 'collectionname';
 	}
 
 	get collection() {
@@ -38,7 +38,6 @@ export default class LokiDown extends AbstractLevelDOWN {
 				return String(value);
 
 			default:
-			case 'array':
 			case 'object':
 				return JSON.stringify(value);
 		}
