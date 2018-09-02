@@ -1,9 +1,19 @@
 {
   "name": "lokidown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Level down wrapper for lokijs",
   "main": "LokiDown.js",
-  "repository": "https://github.com/teken/lokidown",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type":"git",
+    "url":"https://github.com/teken/lokidown"
+  },
+  "bugs": {
+    "url":"https://github.com/teken/lokidown/issues"
+  },
+  "homepage": "https://github.com/teken/lokidown",
   "author": "Duncan Haig",
   "license": "MIT",
   "private": false,
