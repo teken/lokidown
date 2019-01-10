@@ -1,7 +1,7 @@
-import { AbstractLevelDOWN } from 'abstract-leveldown';
-import Loki from 'lokijs';
+const { AbstractLevelDOWN } = require('abstract-leveldown');
+const Loki = require('lokijs');
 
-export default class LokiDown extends AbstractLevelDOWN {
+module.LokiDown = class extends AbstractLevelDOWN {
 	constructor(path, options) {
 		super();
 		this.loki = new Loki(path, dbOptions);

@@ -1,6 +1,6 @@
 {
   "name": "lokidown",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A Level down wrapper for lokijs",
   "main": "LokiDown.js",
   "scripts": {
